@@ -1,0 +1,11 @@
+## Installed Packages
+
+> > axios: Axios is a popular JavaScript library used for making HTTP requests from a web browser or Node.js. It provides a simple and intuitive API to interact with APIs and fetch data. Axios supports various features such as handling request and response interceptors, making asynchronous requests, and handling errors efficiently.
+
+> > chart.js and react-chartjs-2: Chart.js is a powerful JavaScript library for creating responsive and interactive charts. It provides a wide range of chart types, including bar charts, line charts, pie charts, and more. react-chartjs-2 is a React wrapper for Chart.js, allowing you to use Chart.js in a React application easily. It provides React components that encapsulate the Chart.js functionality and make it easier to work with charts in a React environment.
+
+> > moment: Moment.js is a popular JavaScript library for parsing, manipulating, and formatting dates and times. It provides an extensive set of functions and utilities for working with dates, including parsing and formatting dates in various formats, calculating durations, manipulating timezones, and much more. Moment.js has been widely used in JavaScript applications, but note that it is now considered a legacy project, and the Moment team recommends using native JavaScript date and time APIs or other modern alternatives like Luxon or date-fns.
+
+> > react-datepicker: React Datepicker is a flexible and customizable date picker component for React applications. It allows users to select dates easily, provides date range selection, localization support, and various configuration options. React Datepicker simplifies the process of working with date inputs in a React application, providing a consistent and user-friendly date selection experience.
+
+> > styled-components: Styled Components is a popular CSS-in-JS library for styling React components. It allows you to write CSS code directly within your JavaScript or TypeScript files using tagged template literals. Styled Components provides a way to encapsulate styles within components, enabling a more modular and reusable approach to styling in React. It offers features like dynamic styling based on props, theme support, and automatic vendor prefixing.
