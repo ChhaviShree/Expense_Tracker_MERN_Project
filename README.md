@@ -1,1 +1,1 @@
-# Expense_Tracker_React_Project
+# Expense_Tracker_MERN_Project
