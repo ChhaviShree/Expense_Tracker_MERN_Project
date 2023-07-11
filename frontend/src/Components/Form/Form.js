@@ -3,11 +3,12 @@ import { styled } from 'styled-components';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import { useGlobalContext } from '../../context/globalContext';
-
+import { plus } from '../../utils/icons';
+import Button from '../Button/Button';
 
 
 function Form() {
-    const {addIncome}=useGlobalContext()
+    const {addIncome,getIncomes}=useGlobalContext()
     const [inputState,setInputState]=useState({
         title:'',
         amount:'',
@@ -22,6 +23,7 @@ function Form() {
     const handleSubmit=e=>{
         e.preventDefault()
         addIncome(inputState)
+        getIncomes()
     }
   return (
     <FormStyled onSubmit={handleSubmit}>
@@ -37,7 +39,7 @@ function Form() {
         </div>
         <div className='input-control'>
             <input 
-            type="text"
+            type='number'
             value={amount}
             name={'amount'}
             placeholder='Enter Amount'
@@ -63,8 +65,8 @@ function Form() {
                 <option value="freelancing">freelancing</option>
                 <option value="investments">Investements</option>
                 <option value="stocks">Stocks</option>
-                <option value="Bank">Bank Transfer</option>
-                <option value="Education loan">Studies</option>
+                <option value="Bank">Bank</option>
+                <option value="Education">Tutions</option>
                 <option value="other">Other</option>
             </select>
 
@@ -73,7 +75,14 @@ function Form() {
             <textarea name="description" value={description} placeholder="Add a Reference" id="description" cols="30" rows="4" onChange={handleInput('description')}></textarea>
         </div>
         <div className='submit-btn'>
-            <button>Add Income</button>
+            <Button
+               name={'Add Income'}
+               icon={plus}
+               bPad={'.8rem 1.6rem'}
+               bRad={'10px'}
+               bg={'var(--color-accent)'}
+               color={'#fff'}
+            />
         </div>
     </FormStyled>
   )

@@ -25,8 +25,8 @@ function Orb() {
      border-radius:50%;
     //  margin-left:-37vh;
     //  margin-top:-37vh;
-     background:linear-gradient(180deg, #FF1493 0%,#FF1493 100%);
-     filter: blur(250px);
+     background:linear-gradient(180deg,#F08080 0%,#F08080 100%);
+     filter: blur(220px);
      animation:${moveOrb} 10s alternate linear infinite;
   `;
   return (
