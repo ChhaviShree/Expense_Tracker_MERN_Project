@@ -79,6 +79,7 @@ const transactionHistory=()=>{
     history.sort((a,b)=>{
         return new Date(b.createdAt)-new Date(a.createdAt);
     })
+    return history.slice(0,3);
 }
     return(
         <GlobalContext.Provider value={
@@ -94,7 +95,9 @@ const transactionHistory=()=>{
                 deleteExpense,
                 totalExpense,
                 totalBalance,
-                transactionHistory
+                transactionHistory,
+                error,
+                setError
             }
         }>
             {children}

@@ -8,7 +8,7 @@ import Button from '../Button/Button';
 
 
 function ExpenseForm() {
-    const {addExpense}=useGlobalContext()
+    const {addExpense,error}=useGlobalContext()
     const [inputState,setInputState]=useState({
         title:'',
         amount:'',
@@ -33,6 +33,7 @@ function ExpenseForm() {
     }
   return (
     <ExpenseFormStyled onSubmit={handleSubmit}>
+       
         <div className='input-control'>
             <input 
             type="text"
